@@ -1,8 +1,9 @@
 const { Sequelize } = require('sequelize');
 
-const sequelize = new Sequelize('db_lks', 'root', 'rahasia123', {
-  host: 'localhost',
-  dialect: 'mysql'
+const sequelize = new Sequelize('db_cianjur', 'admin', 'rahasia123', {
+  host: '127.0.0.1',
+  dialect: 'postgres',
+  port:5432
 });
 
 module.exports = sequelize;
